@@ -1,0 +1,99 @@
+.container {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.title {
+    color: white;
+    font-size: 6vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+
+.reset {
+    width: 20vw;
+    height: 10vh;
+    border-width: .25rem;
+    cursor: pointer;
+    border-radius: 50px;
+    background-color: aqua;
+    font-size: 3vw;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.boxes{
+    flex: 1 1 calc(30% - 10px);
+    display: flex;
+    height:20vh;
+    width: 20vh;
+    background: #1f3540;
+    border: 2px solid grey;
+    border-radius: 12px;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+}
+
+.board{
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: auto;
+    flex-wrap: wrap;
+    display: flex;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+.boxes img {
+    margin: 30px 30px;
+    height: 10vh;
+    width: 10vh;
+}
+
+.title img {
+    padding: 10px 10px;
+    height: 10vh;
+    width: 10vh;
+}
+
+
+/* Media Query for Small Screens */
+@media (max-width: 600px) {
+    .title {
+        margin-top: 20px;
+        font-size: 8vw; /* Smaller title font for narrow screens */
+    }
+
+    .board {
+        margin-top: 10vh;
+        margin-bottom: 10vh;
+    }
+
+    .reset {
+        width: 80%; /* Reset button fits smaller screens */
+        height: 10vh;
+        font-size: 4vw;
+    }
+
+    .boxes{
+        height:15vh;
+        width: 15vh;
+    }
+
+    .boxes img {
+        height: 8vh;
+        width: 8vh;
+    }
+    
+    .title img {
+        height: 5vh;
+        width: 5vh;
+    }
+}
