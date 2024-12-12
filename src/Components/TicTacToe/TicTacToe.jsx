@@ -79,6 +79,7 @@ export const TicTacToe = () => {
         titleRef.current.innerHTML = `Tic Tac Toe Game`;
         box_array.map((e)=>{
             e.current.innerHTML = "";
+            return null;
         })
     }
 
